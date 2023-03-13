@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="Viewport" content="width=device-width , intial-scale=1.0">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+   <body>
+   <div class="forms">
+    <form id="form"> 
+        <h2>SRUVEY</h2>
+        <div class="input">
+            <!-- <label for="">Name</label> -->
+            <p>Name</p>
+            <input type="text" placeholder="Enter Anime Name" id="name" onkeyup="validatename()">
+            <span id="Invalid-name"></span>
+        </div>
+        <div class="input">
+            <!-- <label for="">Type</label> -->
+            <p>Type</p>
+            <input type="text" placeholder="Seris/Movie" id="type" onkeyup="validatetype()">
+            <span id="Invalid-type"></span>
+        </div>
+        <div class="input">
+            <!-- <label for="">Episodes</label> -->
+            <p>Episodes</p>
+            <input type="number" placeholder="Number of Episodes" id="episode" onkeyup="validateepisode()">
+            <span id="Invalid-number"></span>
+        </div>
+        <div class="input">
+            <!-- <label for="">Release Date</label> -->
+            <p>Release Date</p>
+            <input type="date" placeholder="Release Date" id="date" onkeyup="validatedate()">
+            <span id="Invalid-date"></span>
+        </div>
+        <div class="input">
+            <!-- <label for="">Ratings</label> -->
+            <p>Ratings</p>
+            <input type="number" placeholder="Rate from 1 to 10" id="rate" onkeyup="validaterating()">
+            <span id="Invalid-Ratings"></span>
+        </div>
+        <div class="buttons">
+            <button onclick="validate()">Submit</button>
+        <button onclick="reload()">Refersh</button>
+        </div>
+        
+        <span id="Invalid-data"></span>
+     </form>
+
+   </div>
+     
+   </body>
+   <Script src="Script.js"></Script>
+</html>
