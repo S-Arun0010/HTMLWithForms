@@ -1,12 +1,12 @@
-var Name = document.getElementById("Invalid-name");
-var Type = document.getElementById("Invalid-type");
-var Episode = document.getElementById("Invalid-number");
-var date= document.getElementById("Invalid-date");
-var Rate = document.getElementById("Invalid-Ratings");
+let Name = document.getElementById("Invalid-name");
+let Type = document.getElementById("Invalid-type");
+let Episode = document.getElementById("Invalid-number");
+let date= document.getElementById("Invalid-date");
+let Rate = document.getElementById("Invalid-Ratings");
 
 const  validatename = () =>
 {
-     var n = document.getElementById("name").value;
+     let n = document.getElementById("name").value;
      if(n.length == 0 )
      {
         Name.innerHTML="Name is Mandatory";
@@ -23,7 +23,7 @@ const  validatename = () =>
 }
 const  validatetype = () =>
 {
-     var t = document.getElementById("type").value;
+     let t = document.getElementById("type").value;
      if(t.length == 0 )
      {
         Type.innerHTML="Type is Mandatory";
@@ -39,7 +39,7 @@ const  validatetype = () =>
 }
 const  validateepisode = () =>
 {
-     var epi = document.getElementById("episode").value;
+     let epi = document.getElementById("episode").value;
      if(epi.length == 0 )
      {
         Episode.innerHTML="This field is Mandatory";
@@ -50,7 +50,7 @@ const  validateepisode = () =>
 }
 const  validatedate = () =>
 {
-     var d = document.getElementById("date").value;
+    let d = document.getElementById("date").value;
      if(d.length == 0 )
      {
         date.innerHTML="Date is Mandatory";
@@ -61,7 +61,7 @@ const  validatedate = () =>
 }
 const  validaterating = () =>
 {
-     var r = document.getElementById("rate").value;
+    let r = document.getElementById("rate").value;
      if(r.length == 0 )
      {
         Rate.innerHTML="Rating is Mandatory";
